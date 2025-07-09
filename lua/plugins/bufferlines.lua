@@ -14,9 +14,9 @@ return {
         right_mouse_command = 'Bdelete! %d', -- can be a string | function, see "Mouse actions"
         left_mouse_command = 'buffer %d', -- can be a string | function, see "Mouse actions"
         middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
-        -- buffer_close_icon = '󰅖',
-        buffer_close_icon = '✗',
+        -- buffer_close_icon = '✗',
         -- buffer_close_icon = '✕',
+        buffer_close_icon = '',
         close_icon = '',
         path_components = 1, -- Show only the file name without the directory
         modified_icon = '●',
@@ -38,7 +38,8 @@ return {
         show_tab_indicators = false,
         indicator = {
           -- icon = '▎', -- this should be omitted if indicator style is not 'icon'
-          style = 'none', -- Options: 'icon', 'underline', 'none'
+          -- style = 'none', -- Options: 'icon', 'underline', 'none'
+          style = 'underline',
         },
         icon_pinned = '󰐃',
         minimum_padding = 1,
