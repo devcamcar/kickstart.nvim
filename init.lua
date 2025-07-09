@@ -1,4 +1,7 @@
--- vim: ts=2 sts=2 sw=2 et
+-- NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 require 'core.options'
 require 'core.keymaps'
 
@@ -14,16 +17,17 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   require 'plugins.nord',
-  require 'plugins.telescope',
+  require 'plugins.whichkey',
   require 'plugins.neo-tree',
   require 'plugins.bufferlines',
   require 'plugins.lualine',
-  require 'plugins.lspconfig',
-  require 'plugins.lazydev',
-  require 'plugins.conform',
-  require 'plugins.complete',
-  require 'plugins.todo-comments',
   require 'plugins.treesitter',
+  require 'plugins.telescope',
+  require 'plugins.todo-comments',
+  --  require 'plugins.lspconfig',
+  --  require 'plugins.lazydev',
+  --  require 'plugins.conform',
+  --  require 'plugins.complete',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

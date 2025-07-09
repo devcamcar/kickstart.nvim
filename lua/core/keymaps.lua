@@ -11,10 +11,13 @@ vim.keymap.set('n', '<Esc>', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 -- Save file
-vim.keymap.set('n', '<C-s>', ':w<CR>', opts)
+--vim.keymap.set('n', '<C-s>', ':w<CR>', opts)
 
 -- Close file
-vim.keymap.set('n', '<C-q>', ':q<CR>', opts)
+--vim.keymap.set('n', '<C-q>', ':q<CR>', opts)
+
+-- Open new tab
+--vim.keymap.set('n', '<C-t>', ':tabnew<CR>', opts)
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -22,7 +25,7 @@ vim.keymap.set('n', '<C-q>', ':q<CR>', opts)
 --
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+--vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- Keybinds to make split navigation easier.
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
@@ -36,23 +39,11 @@ vim.keymap.set('n', '<Down>', ':resize +2<CR>', opts)
 vim.keymap.set('n', '<Left>', ':vertical resize -2<CR>', opts)
 vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', opts)
 
--- Buffers
---vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts)
---vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts)
---vim.keymap.set('n', '<leader>x', ':Bdelete!<CR>', opts)
---vim.keymap.set('n', '<leader>b', ':enew<CR>', opts)
-
 -- Window management
 vim.keymap.set('n', '<leader>v', '<C-w>v', opts)
 vim.keymap.set('n', '<leader>h', '<C-w>s', opts)
 vim.keymap.set('n', '<leader>se', '<C-w>', opts)
 vim.keymap.set('n', '<leader>xs', ':enew<CR>', opts)
-
--- Tabs
-vim.keymap.set('n', '<C-t>', ':tabnew<CR>', opts)
-vim.keymap.set('n', '<C-w>', ':tabclose<CR>', opts)
-vim.keymap.set('n', '<Tab>', ':tabn<CR>', opts)
-vim.keymap.set('n', '<S-Tab>', ':tabp<CR>', opts)
 
 -- Toggle line wrapping
 vim.keymap.set('n', '<leader>lw', ':set wrap!<CR>', opts)
