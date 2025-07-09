@@ -22,6 +22,7 @@ require('lazy').setup({
   require 'plugins.autocomplete',
   require 'plugins.lsp',
   require 'plugins.none-ls',
+  require 'plugins.indent-blankline',
   require 'plugins.alpha',
   require 'plugins.misc',
   --  require 'plugins.lazydev',
