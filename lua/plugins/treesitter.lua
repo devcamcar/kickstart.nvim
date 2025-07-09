@@ -27,6 +27,7 @@ return { -- Highlight, edit, and navigate code
         'python',
         'query',
         'regex',
+        'rust',
         'sql',
         'terraform',
         'toml',
