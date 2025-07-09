@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   require 'plugins.theme',
-  require 'plugins.whichkey',
   require 'plugins.neo-tree',
   require 'plugins.bufferlines',
   require 'plugins.lualine',
@@ -22,6 +21,8 @@ require('lazy').setup({
   require 'plugins.todo-comments',
   require 'plugins.autocomplete',
   require 'plugins.lsp',
+  require 'plugins.none-ls',
+  require 'plugins.misc',
   --  require 'plugins.lazydev',
   --  require 'plugins.conform',
   --  require 'plugins.complete',

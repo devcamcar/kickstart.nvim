@@ -11,10 +11,10 @@ vim.keymap.set('n', '<Esc>', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 -- Save file
---vim.keymap.set('n', '<C-s>', ':w<CR>', opts)
+vim.keymap.set('n', '<C-s>', ':w<CR>', opts)
 
 -- Close file
---vim.keymap.set('n', '<C-q>', ':q<CR>', opts)
+vim.keymap.set('n', '<C-w>', ':q<CR>', opts)
 
 -- Open new tab
 --vim.keymap.set('n', '<C-t>', ':tabnew<CR>', opts)
@@ -46,7 +46,7 @@ vim.keymap.set('n', '<leader>se', '<C-w>', opts)
 vim.keymap.set('n', '<leader>xs', ':enew<CR>', opts)
 
 -- Toggle line wrapping
-vim.keymap.set('n', '<leader>lw', ':set wrap!<CR>', opts)
+vim.keymap.set('n', '<leader>w', ':set wrap!<CR>', { desc = 'Toggle Line Wrap' })
 
 -- Keep last yanked when pasting
 vim.keymap.set('v', 'p', '"_dP', opts)
