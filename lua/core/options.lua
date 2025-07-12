@@ -17,6 +17,7 @@ vim.o.softtabstop = 4
 vim.o.expandtab = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.laststatus = 3
 vim.o.backspace = 'indent,eol,start'
 
 -- Sync clipboard between OS and Neovim.
