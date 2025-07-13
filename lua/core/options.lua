@@ -7,6 +7,7 @@ vim.opt.mouse = 'a'
 vim.opt.undofile = true
 vim.opt.number = true
 vim.opt.showmode = false
+vim.o.termguicolors = true
 vim.o.wrap = false
 vim.o.autoindent = true
 vim.o.ignorecase = true
